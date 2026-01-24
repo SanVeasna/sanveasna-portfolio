@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <section id="contact" ref={ref} className="relative">
-      <div className="section-container">
+      <div className="section-container ">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <motion.span initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} className="section-label">
