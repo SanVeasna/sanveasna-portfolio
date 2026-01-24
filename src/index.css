@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Pixion dark green/charcoal palette */
+    --background: 160 20% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 160 15% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 160 15% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Lime green accent */
+    --primary: 82 100% 62%;
+    --primary-foreground: 160 20% 4%;
+
+    /* Cyan secondary */
+    --secondary: 175 80% 50%;
+    --secondary-foreground: 160 20% 4%;
+
+    --muted: 160 10% 12%;
+    --muted-foreground: 160 5% 55%;
+
+    --accent: 82 80% 50%;
+    --accent-foreground: 160 20% 4%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 10% 15%;
+    --input: 160 10% 15%;
+    --ring: 82 100% 62%;
+
+    --radius: 1rem;
+
+    /* Custom Pixion tokens */
+    --lime: 82 100% 62%;
+    --dark-green: 160 20% 4%;
+    --glass-bg: 160 15% 8% / 0.7;
+    --glass-border: 0 0% 100% / 0.1;
+    --grid-color: 160 10% 15%;
+    
+    /* Sidebar */
+    --sidebar-background: 160 15% 6%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 82 100% 62%;
+    --sidebar-primary-foreground: 160 20% 4%;
+    --sidebar-accent: 160 10% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 160 10% 15%;
+    --sidebar-ring: 82 100% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+@layer components {
+  /* Grid background */
+  .grid-bg {
+    background-image: 
+      linear-gradient(to right, hsl(var(--grid-color)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--grid-color)) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  /* Glass card */
+  .glass-card {
+    @apply relative overflow-hidden rounded-2xl;
+    background: hsl(var(--glass-bg));
+    border: 1px solid hsl(var(--glass-border));
+    backdrop-filter: blur(20px);
+  }
+
+  .glass-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      hsl(var(--lime) / 0.06),
+      transparent 40%
+    );
+  }
+
+  .glass-card:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--lime)),
+      hsl(var(--secondary))
+    );
+  }
+
+  /* Lime text */
+  .lime-text {
+    color: hsl(var(--lime));
+  }
+
+  /* Glow effects */
+  .glow-lime {
+    box-shadow: 
+      0 0 30px hsl(var(--lime) / 0.3),
+      0 0 60px hsl(var(--lime) / 0.15);
+  }
+
+  /* Section styling */
+  .section-container {
+    @apply relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border text-sm text-muted-foreground mb-6;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-display;
+  }
+
+  /* Primary button - lime */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold overflow-hidden transition-all duration-300;
+    background: hsl(var(--lime));
+    color: hsl(var(--dark-green));
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px -10px hsl(var(--lime) / 0.5);
+  }
+
+  /* Outline button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold border border-border bg-transparent text-foreground transition-all duration-300;
+  }
+
+  .btn-outline:hover {
+    @apply border-primary text-primary;
+    transform: translateY(-2px);
+  }
+
+  /* Marquee */
+  .marquee {
+    @apply flex overflow-hidden;
+  }
+
+  .marquee-content {
+    @apply flex shrink-0 items-center gap-8;
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .marquee:hover .marquee-content {
+    animation-play-state: paused;
+  }
+
+  /* Timeline */
+  .timeline-item {
+    @apply relative pl-8 pb-10 last:pb-0;
+  }
+
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-0 top-2 w-3 h-3 rounded-full;
+    background: hsl(var(--lime));
+    box-shadow: 0 0 15px hsl(var(--lime) / 0.5);
+  }
+
+  .timeline-item::after {
+    content: '';
+    @apply absolute left-[5px] top-6 w-0.5 h-full;
+    background: hsl(var(--border));
+  }
+
+  .timeline-item:last-child::after {
+    @apply hidden;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    @apply h-2 rounded-full overflow-hidden;
+    background: hsl(var(--muted));
+  }
+
+  .progress-bar-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+    background: linear-gradient(90deg, hsl(var(--lime)), hsl(var(--secondary)));
+  }
+
+  /* Scroll progress */
+  .scroll-progress {
+    @apply fixed top-0 left-0 h-1 z-50;
+    background: linear-gradient(90deg, hsl(var(--lime)), hsl(var(--secondary)));
+    transform-origin: left;
+  }
+
+  /* Noise overlay */
+  .noise-overlay {
+    @apply pointer-events-none fixed inset-0 z-50 opacity-[0.015];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  /* Tech icon */
+  .tech-item {
+    @apply glass-card p-6 rounded-2xl flex flex-col gap-4;
+  }
+
+  /* Star rating */
+  .star-rating {
+    @apply flex gap-1 text-primary;
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
