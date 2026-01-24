@@ -19,7 +19,7 @@ const About = () => {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=600&q=80"
+                src="profile2.png?w=600&q=80"
                 alt="About James"
                 className="w-full h-full object-cover"
               />

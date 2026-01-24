@@ -39,7 +39,7 @@ const Contact = () => {
             </motion.div>
           </div>
 
-          <motion.form onSubmit={handleSubmit} initial={{ opacity: 0, x: 30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 }} className="glass-card p-8 rounded-2xl space-y-6">
+          <motion.form onSubmit={handleSubmit} initial={{ opacity: 0, x: 30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 }} className="glass-card p-8 rounded-2xl space-y-6 before:relative">
             <div>
               <label className="block text-sm font-medium mb-2">Name</label>
               <input type="text" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-primary outline-none transition-all" placeholder="Your name" />
@@ -56,7 +56,7 @@ const Contact = () => {
           </motion.form>
         </div>
 
-        <motion.footer initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ delay: 0.5 }} className="mt-24 pt-8 border-t border-border text-center">
+        <motion.footer initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ delay: 0.5 }} className="mt-10 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">{footerData.copyright}</p>
           <p className="text-muted-foreground/60 text-xs mt-2">{footerData.tagline}</p>
         </motion.footer>

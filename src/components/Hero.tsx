@@ -125,10 +125,10 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-[26px] blur-3xl" />
 
               {/* Image */}
-              <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
+              <div className="relative w-72 h-[22rem] md:w-96 md:h-[26rem] lg:w-[420px] lg:h-[450px]">
                 <div className="absolute inset-0 rounded-[26px] overflow-hidden border-2 border-primary/30">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80"
+                    src="profile.png?w=500&q=80"
                     alt="James Scott"
                     className="w-full h-full object-cover"
                   />
