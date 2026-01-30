@@ -129,7 +129,7 @@ const Hero = () => {
                 <div className="absolute inset-0 rounded-[26px] overflow-hidden border-2 border-primary/30">
                   <img
                     src="profile.png?w=500&q=80"
-                    alt="James Scott"
+                    alt="San Veasna"
                     className="w-full h-full object-cover"
                   />
                 </div>

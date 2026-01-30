@@ -374,48 +374,37 @@ export const testimonialsData: {
   items: [
     {
       id: "1",
-      name: "Sarah Chen",
-      role: "CEO",
-      company: "Innovate Labs",
+      name: "Sreng Rithea",
+      role: "Assistant Supervisor",
+      company: "Chip Mong Bank",
       content:
-        "James transformed our entire product experience. His attention to detail and ability to understand our users' needs resulted in a 40% increase in user engagement.",
+        "Veasna transformed our entire product experience. His attention to detail and ability to understand our users' needs resulted in a 40% increase in user engagement.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+        "/man.png",
       rating: 5,
     },
     {
       id: "2",
-      name: "Marcus Johnson",
-      role: "Founder",
-      company: "TechFlow",
+      name: "Pach Narin",
+      role: "Card System Developer",
+      company: "ABA Bank",
       content:
-        "Working with James was a game-changer. He delivered a stunning design that exceeded our expectations and helped us secure our Series A funding.",
+        "Working with Veasna was a game-changer. He delivered a stunning design that exceeded our expectations and helped us secure our Series A funding.",
       avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80",
+        "/man.png",
       rating: 5,
     },
     {
       id: "3",
-      name: "Emily Roberts",
-      role: "Product Manager",
-      company: "Artisan Market",
+      name: "Sam Rithesen",
+      role: "Reporting Officer",
+      company: "SBILHBank",
       content:
-        "James has an incredible ability to translate complex requirements into beautiful, intuitive designs. Our users love the new interface!",
+        "Veasna has an incredible ability to translate complex requirements into beautiful, intuitive designs. Our users love the new interface!",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80",
+        "/man.png",
       rating: 5,
-    },
-    {
-      id: "4",
-      name: "David Kim",
-      role: "CTO",
-      company: "FinanceHub",
-      content:
-        "Exceptional work from start to finish. James's designs are not only beautiful but also highly functional and accessible.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80",
-      rating: 5,
-    },
+    }
   ],
 };
 
@@ -463,6 +452,6 @@ export const contactData = {
 
 // Footer
 export const footerData = {
-  copyright: `© ${new Date().getFullYear()} James Scott. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} San Veasna. All rights reserved.`,
   tagline: "Designed with passion in San Francisco",
 };

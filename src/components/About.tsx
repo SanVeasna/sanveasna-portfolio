@@ -20,7 +20,7 @@ const About = () => {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <img
                 src="profile2.png?w=600&q=80"
-                alt="About James"
+                alt="About Veasna"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />

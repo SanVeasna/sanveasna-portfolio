@@ -14,7 +14,7 @@ const Index = () => {
   useSmoothScroll();
 
   useEffect(() => {
-    document.title = 'James Scott | UI/UX Designer';
+    document.title = 'San Veasna | Senior Full-Stack Developer';
   }, []);
 
   return (
