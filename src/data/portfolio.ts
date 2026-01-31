@@ -187,55 +187,71 @@ export const portfolioData: {
 } = {
   label: "My Work",
   title: "Featured Projects",
-  categories: ["All", "UI/UX", "Web Design", "Mobile", "Branding"],
+  categories: ["All", "UI/UX", "Web Design", "Mobile", "Branding", "Full Stack"],
   projects: [
     {
       id: "1",
-      title: "Zenith Dashboard",
-      category: "UI/UX",
+      title: "CMS Website",
+      category: "Full Stack",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      description: "Analytics dashboard design",
+        "acheivement1.png",
+      description: "Website for display cotent such as blog, news, etc.",
     },
     {
       id: "2",
-      title: "Lunar E-commerce",
-      category: "Web Design",
+      title: "School Management System",
+      category: "Full Stack",
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-      description: "Modern shopping experience",
+        "school-management-system.webp",
+      description: "System for managing school activities and operations.",
     },
     {
       id: "3",
-      title: "Pulse Fitness",
-      category: "Mobile",
+      title: "Clinic Management System",
+      category: "Full Stack",
       image:
-        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
-      description: "Fitness tracking app",
+        "clinic-management.jpg",
+      description: "System for managing clinic appointments and patient records.",
     },
     {
       id: "4",
-      title: "Nova Brand",
-      category: "Branding",
+      title: "Food Menu Website",
+      category: "Frontend",
       image:
-        "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800&q=80",
-      description: "Complete brand identity",
+        "food-display.jpg",
+      description: "Website for displaying food menu items.",
     },
     {
       id: "5",
-      title: "Echo Music",
-      category: "Mobile",
+      title: "News Website",
+      category: "Frontend",
       image:
-        "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&q=80",
-      description: "Music streaming app",
+        "news.webp",
+      description: "Website for displaying news articles and updates.",
     },
     {
       id: "6",
-      title: "Vertex Finance",
-      category: "UI/UX",
+      title: "Card Center Dashboard System",
+      category: "Full Stack",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      description: "Banking dashboard",
+        "dashboard.png",
+      description: "Banking dashboard system for support internal operation.",
+    },
+    {
+      id: "7",
+      title: "Admin Dashboard System",
+      category: "Frontend",
+      image:
+        "dashboard.png",
+      description: "Admin dashboard for managing operation.",
+    },
+    {
+      id: "8",
+      title: "Display Product Website",
+      category: "Full Stack",
+      image:
+        "product.png",
+      description: "Product display website.",
     },
   ],
 };
