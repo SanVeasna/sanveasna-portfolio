@@ -30,7 +30,7 @@ const TechStack = () => {
         </div>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] gap-6">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-6">
           {toolsData.items.map((tool, index) => {
             const Icon = tool.icon;
 
