@@ -117,6 +117,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navLinks.length * 0.05 }}
                 className="w-full btn-primary mt-4"
+                onClick={handleDownload}
               >
                 <Download className="w-4 h-4" />
                 Download CV
