@@ -469,5 +469,5 @@ export const contactData = {
 // Footer
 export const footerData = {
   copyright: `© ${new Date().getFullYear()} San Veasna. All rights reserved.`,
-  tagline: "Designed with passion in San Francisco",
+  tagline: "Thank for visiting my portfolio!",
 };
