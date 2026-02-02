@@ -386,7 +386,7 @@ export const testimonialsData: {
   items: Testimonial[];
 } = {
   label: "Testimonials",
-  title: "What Clients Say",
+  title: "What People Say",
   items: [
     {
       id: "1",
@@ -394,7 +394,7 @@ export const testimonialsData: {
       role: "Assistant Supervisor",
       company: "Chip Mong Bank",
       content:
-        "Veasna transformed our entire product experience. His attention to detail and ability to understand our users' needs resulted in a 40% increase in user engagement.",
+        "Working with Veasna has been a great experience. He has strong full-stack skills and a clear understanding of both frontend and backend development. He consistently delivers clean, maintainable code and is always willing to help the team solve complex problems.",
       avatar:
         "/man.png",
       rating: 5,
@@ -405,7 +405,7 @@ export const testimonialsData: {
       role: "Card System Developer",
       company: "ABA Bank",
       content:
-        "Working with Veasna was a game-changer. He delivered a stunning design that exceeded our expectations and helped us secure our Series A funding.",
+        "Veasna is a reliable full stack developer who understands business requirements quickly and turns them into practical solutions. His ability to manage CMS-based websites and custom features makes him a valuable asset to any project.",
       avatar:
         "/man.png",
       rating: 5,
@@ -416,7 +416,7 @@ export const testimonialsData: {
       role: "Reporting Officer",
       company: "SBILHBank",
       content:
-        "Veasna has an incredible ability to translate complex requirements into beautiful, intuitive designs. Our users love the new interface!",
+        "Veasna shows solid technical growth in his full stack journey. He is detail-oriented, adaptable to new technologies, and takes ownership of the systems he builds—from database design to deployment.",
       avatar:
         "/man.png",
       rating: 5,
@@ -459,8 +459,8 @@ export const contactData = {
   subtitle: "Have a project in mind? Let's create something amazing together.",
   email: "sanveasna096@gmail.com",
   socials: [
-    { name: "Twitter", url: "https://twitter.com", icon: "twitter" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
+    { name: "Telegram", url: "https://t.me/VeasnaPH", icon: "telegram" },
+    { name: "LinkedIn", url: "www.linkedin.com/in/veasna-san-098b3b22a", icon: "linkedin" },
     { name: "Dribbble", url: "https://dribbble.com", icon: "dribbble" },
     { name: "Behance", url: "https://behance.com", icon: "behance" },
   ],

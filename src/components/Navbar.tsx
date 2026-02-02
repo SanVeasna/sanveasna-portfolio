@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { navLinks } from "@/data/portfolio";
 import { useScrollProgress } from "@/hooks/use-scroll-progress";
+import handleDownload from "@/utils/download";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,6 +72,7 @@ const Navbar = () => {
               className="hidden lg:inline-flex btn-primary text-sm py-2.5 px-6"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleDownload}
             >
               <Download className="w-4 h-4" />
               Download CV

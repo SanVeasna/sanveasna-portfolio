@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Send, Twitter, Linkedin, Mail } from 'lucide-react';
 import { useInView } from '@/hooks/use-in-view';
 import { contactData, footerData } from '@/data/portfolio';
+import { SiLinkedin, SiTelegram } from 'react-icons/si';
 
 const Contact = () => {
   const [ref, inView] = useInView<HTMLElement>({ threshold: 0.1 });
@@ -10,7 +11,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Message sent! (Demo)');
+    alert('Sorry for the inconvenience, the contact form is currently not functional.');
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -34,8 +35,8 @@ const Contact = () => {
               {contactData.email}
             </motion.a>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4 }} className="flex gap-4">
-              <a href="#" className="p-4 glass-card rounded-xl hover:bg-primary/10 transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="p-4 glass-card rounded-xl hover:bg-primary/10 transition-colors"><Linkedin className="w-5 h-5" /></a>
+              <a href="https://t.me/VeasnaPH" className="p-4 glass-card rounded-xl hover:bg-primary/10 transition-colors" target='blank'><SiTelegram className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/in/veasna-san-098b3b22a" className="p-4 glass-card rounded-xl hover:bg-primary/10 transition-colors" target='blank'><SiLinkedin className="w-5 h-5" /></a>
             </motion.div>
           </div>
 

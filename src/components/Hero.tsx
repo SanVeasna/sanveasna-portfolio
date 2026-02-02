@@ -8,6 +8,7 @@ import {
   PhoneCall,
 } from "lucide-react";
 import { heroData, marqueeItems } from "@/data/portfolio";
+import handleDownload from "@/utils/download";
 
 const Hero = () => {
   const handleScroll = (target: string) => {
@@ -89,6 +90,7 @@ const Hero = () => {
                 className="btn-outline"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={handleDownload}
               >
                 <Download className="w-5 h-5" />
                 {heroData.cta.secondary}
