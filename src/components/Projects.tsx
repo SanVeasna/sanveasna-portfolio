@@ -149,7 +149,7 @@ const Projects = () => {
                 <p className="text-muted-foreground mb-6">
                   {selectedProject.description}
                 </p>
-                <button className="btn-primary">
+                <button className="btn-primary" onClick={() => window.open(selectedProject.link, '_blank')}>
                   View Project
                   <ExternalLink className="w-4 h-4" />
                 </button>

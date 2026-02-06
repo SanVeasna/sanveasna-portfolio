@@ -177,6 +177,7 @@ export interface Project {
   category: string;
   image: string;
   description: string;
+  link?: string;
 }
 
 export const portfolioData: {
@@ -212,6 +213,7 @@ export const portfolioData: {
       image:
         "clinic-management.jpg",
       description: "System for managing clinic appointments and patient records.",
+      link: "https://www.cys-clinic.com/",
     },
     {
       id: "4",
@@ -228,6 +230,7 @@ export const portfolioData: {
       image:
         "news.webp",
       description: "Website for displaying news articles and updates.",
+      link: "https://business-cambodia.com",
     },
     {
       id: "6",
